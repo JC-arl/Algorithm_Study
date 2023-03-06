@@ -8,6 +8,7 @@
 
 ### GOAL Mind
 파인만 알고리즘
+
 (1) write down the problem;
 
 (2) think very hard;
