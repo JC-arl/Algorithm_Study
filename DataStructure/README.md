@@ -3,7 +3,7 @@
 ## 스케쥴
 
 | 번호 |주제|
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :--: | :---: |
 |  01  |[Array](https://blog.encrypted.gg/927?category=773649) / [Linked List](https://blog.encrypted.gg/932?category=773649)|
 |  02  |[Stack](https://blog.encrypted.gg/933?category=773649) / [Queue](https://blog.encrypted.gg/934?category=773649) / [Deque](https://blog.encrypted.gg/935?category=773649)|
 |  03  |[Graph](https://blog.encrypted.gg/1016?category=773649) / [DFS](https://blog.encrypted.gg/942?category=773649) / [BFS](https://blog.encrypted.gg/941?category=773649)|
