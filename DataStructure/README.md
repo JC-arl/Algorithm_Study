@@ -9,7 +9,7 @@
 | [Stack](https://blog.encrypted.gg/933?category=773649) / [Queue](https://blog.encrypted.gg/934?category=773649) / [Deque](https://blog.encrypted.gg/935?category=773649)             |
 |  [Graph](https://blog.encrypted.gg/1016?category=773649) / [DFS](https://blog.encrypted.gg/942?category=773649) / [BFS](https://blog.encrypted.gg/941?category=773649)               |                                                         |
 |
-|[Recursion](https://blog.encrypted.gg/943?category=773649) 
+|[Recursion](https://blog.encrypted.gg/943?category=773649) |
 |[Tree](https://blog.encrypted.gg/1019?category=773649)                                          |
 |[BST](https://blog.encrypted.gg/1013?category=773649)                                                                      |
 |[Heap](https://blog.encrypted.gg/1015?category=773649)                                                                    |
