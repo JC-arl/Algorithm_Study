@@ -1,0 +1,91 @@
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+const int MX = 1000005;
+int dat[MX], pre[MX], nxt[MX];
+
+
+int cursor = 1;
+int N;
+int len =1;
+char edit[600005];
+void traverse()
+{
+    int cur = nxt[0];
+    while(cur != -1)
+    {
+        cout << dat[cur]<<" ";
+        cur = nxt[cur];
+    }
+}
+
+void erase()
+{
+    nxt[pre[cursor]] = nxt[cursor];
+    if(nxt[cursor] != -1) 
+        pre[nxt[cursor]] = pre[cursor];
+}
+void add(char x)
+{
+    dat[len] =x;
+    pre[len] = pre[cursor];
+    nxt[len] = cursor;
+    if(nxt[cursor] != -1)
+        pre[nxt[cursor]] = len;
+    nxt[cursor] = len;
+    len++;
+}
+
+int main()
+{
+    string s;
+    cin>> s >> N;
+    fill(pre, pre+MX, -1);
+    fill(nxt, nxt+MX, -1);
+    for(auto c:s)
+    {//len =0;cursor=1
+        dat[cursor] = c;
+        pre[cursor] = len;
+        if(cursor+1<=s.size())
+        nxt[cursor] = cursor+1;
+        cursor++;
+        len++;
+    }
+    /*
+    for(int i=1; i <= s.size(); i++)
+    {
+        dat[cursor] = s[i-1];
+        pre[cursor] = i;
+        nxt[cursor] = nxt[i];
+        cursor++;
+    }
+    */
+    char cmd;
+    while(N--)
+    {
+        cin>>cmd;
+        if(cmd == 'L')
+        {
+            if(cursor > 0)//커서가 문장의 맨 앞이면 무시
+                cursor--;
+        }else if(cmd = 'D')
+        {
+            if(nxt[cursor] != -1)//커서가 문장의 맨 뒤이면 무시
+                cursor++;
+        }else if(cmd = 'B')
+        {
+            erase();
+        }else if(cmd = 'P')
+        {
+            char x;
+            cin>>x;
+            add(x);
+        }
+    }
+    traverse();
+    
+
+    return 0;
+}
