@@ -39,9 +39,9 @@
 3. 원형 연결 리스트
 
 #### 야매 연결리스트 코드
-const int MX = 1000005;
-int dat[MX], pre[MX], nxt[MX];
-int unused = 1;
+    const int MX = 1000005;
+    int dat[MX], pre[MX], nxt[MX];
+    int unused = 1;
 
-fill(pre, pre+MX, -1)
-fill(nxt, nxt+MX, -1)
+    fill(pre, pre+MX, -1)
+    fill(nxt, nxt+MX, -1)
