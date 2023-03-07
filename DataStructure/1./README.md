@@ -37,3 +37,11 @@
 1. 단일 연결 리스트
 2. 이중 연결 리스트    //STL LIST는 이중연결리스트
 3. 원형 연결 리스트
+
+#### 야매 연결리스트 코드
+const int MX = 1000005;
+int dat[MX], pre[MX], nxt[MX];
+int unused = 1;
+
+fill(pre, pre+MX, -1)
+fill(nxt, nxt+MX, -1)
