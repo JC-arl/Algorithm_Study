@@ -55,3 +55,4 @@
             cur = nxt[cur];
         }
     }
+[연결리스트 코드 참고] (https://github.com/encrypted-def/basic-algo-lecture/blob/master/0x04/linked_list_test_ans.cpp)
