@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int A,B,C;
+int arr[10];
+
+void numcount(int num)
+{
+    string count = to_string(num);
+    for(int i=0;i<count.size();i++)
+        arr[ count[i] - 48 ]++;
+    
+    
+    for(int i=0;i<10;i++)
+        cout<<arr[i]<<"\n";
+}
+
+int main(void)
+{
+    cin>>A>>B>>C;
+    int mul = A*B*C;
+    numcount(mul);
+}
