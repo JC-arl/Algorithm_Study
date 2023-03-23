@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#include<list>
+using namespace std;
+
+int N;
+string pwd;
+
+
+int main()
+{
+    cin>>N;
+    while(N--)
+    {
+        list<char> li;
+        list<char>::iterator cur = li.end();
+        cin>>pwd;
+        for(auto c: pwd)
+        {
+            if(c == '-')
+            {
+                if( cur != li.begin())
+                {
+                    cur--;
+                    cur = li.erase(cur);
+                }
+            }else if( c == '<')
+            {
+                if(cur != li.begin())
+                    cur--;
+            }else if( c == '>')
+            {
+                if(cur != li.end())
+                    cur++;
+            }
+            else
+                li.insert(cur,c);
+        }
+        for(auto c: li)
+            cout<< c ;
+        cout<< "\n";
+    }
+    
+    
+    
+    return 0;
+}
