@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+#include<list>
+using namespace std;
+
+int M;
+char cmd, ch;
+string arr;
+list<char> li;
+
+int main()
+{
+    cin>>arr;
+    cin>>M;
+    
+    
+    for(auto c: arr)
+        li.push_back(c);
+    list<char>::iterator cur = li.end();
+        
+    while(M--)
+    {
+        cin>>cmd;
+        
+        if(cmd == 'L')
+        {
+            if(cur != li.begin() )
+                cur--;
+        }
+        else if( cmd == 'D')
+        {
+            if(cur != li.end() )
+                cur++;
+        }
+        else if( cmd == 'B')
+        {
+            if(cur != li.begin() )
+            {
+                cur--;
+                cur = li.erase(cur);
+            }        
+        }
+        else if( cmd == 'P')
+        {
+            
+            cin >> ch;
+            
+            li.insert(cur, ch);
+        }
+    }
+    
+    for(auto c: li)
+        cout<<c;
+    
+    return 0;
+}
