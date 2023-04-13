@@ -1,7 +1,9 @@
 #[바킹독](https://blog.encrypted.gg/) 알고리즘 강의로 스터디 진행
 
   *속도 가속
+  
   ios::sync_with_stdio(0); //C 표준 stream과 C++ 표준 stream의 동기화를 끊는다.
+  
   cin.tie(0); //cin을 cout으로부터 untie 한다. stream을 tie하면 다른 stream에서 입출력요청이 오기전에 stream을 flush시킨다.
 
 ## 스케쥴
