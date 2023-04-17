@@ -1,3 +1,43 @@
+#include<iostream>
+#include<stack>
+#include<string>
+
+using namespace std;
+
+int N;
+int main(void)
+{
+    cin>>N;
+    stack<int> st;      //숫자 순서대로 담는용
+    string s;           // 출력값 변수
+    
+    int cnt = 1;
+    while(N--)
+    {
+        int n;
+        cin>>n;
+        
+        while(cnt <= n)
+        {
+            st.push(cnt++);
+            s += "+\n";
+            
+        }
+        if(st.top() != n)
+        {
+            cout<<"NO";
+            return 0;
+        }
+        
+        st.pop();
+        s += "-\n";
+        
+    }
+    cout<<s;
+    
+    return 0;
+}
+-------------------------------------------
 #include <iostream>
 #include <stack>
 #include <queue>
