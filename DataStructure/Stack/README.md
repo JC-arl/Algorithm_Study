@@ -1,3 +1,5 @@
+![100%](https://progress-bar.dev/7/?scale=8&title=progress&width=500&color=babaca&suffix=/8)
+
 # 스택
 FILO(First in Last out) 선입후출
 
